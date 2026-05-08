@@ -1,3 +1,0 @@
-- [User profile](user_profile.md) — prefers code-first, minimal explanations
-- [Response style](feedback_style.md) — concise, implementation-focused, avoid long prose
-- [Rules organization](feedback_rules_organization.md) — new rules go in .claude/rules/<topic>.md, keep CLAUDE.md slim
