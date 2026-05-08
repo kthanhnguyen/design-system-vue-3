@@ -1,0 +1,124 @@
+// Typography design tokens — derived from reference spec
+:root {
+  // Font family
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  // Font weights
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  // --- Text Font ---
+  // Headings
+  --text-h1-size: 48px;
+  --text-h1-line: 58px;
+  --text-h1-weight: var(--font-weight-semibold);
+
+  --text-h2-size: 40px;
+  --text-h2-line: 48px;
+  --text-h2-weight: var(--font-weight-semibold);
+
+  --text-h3-size: 32px;
+  --text-h3-line: 38px;
+  --text-h3-weight: var(--font-weight-semibold);
+
+  --text-h4-size: 28px;
+  --text-h4-line: 34px;
+  --text-h4-weight: var(--font-weight-semibold);
+
+  --text-h5-size: 24px;
+  --text-h5-line: 28px;
+  --text-h5-weight: var(--font-weight-semibold);
+
+  // Subtitles
+  --text-s1-size: 18px;
+  --text-s1-line: 28px;
+  --text-s1-weight: var(--font-weight-semibold);
+
+  --text-s2-size: 16px;
+  --text-s2-line: 24px;
+  --text-s2-weight: var(--font-weight-semibold);
+
+  // Body
+  --text-b1-size: 16px;
+  --text-b1-line: 24px;
+  --text-b1-weight: var(--font-weight-regular);
+
+  --text-b2-size: 16px;
+  --text-b2-line: 24px;
+  --text-b2-weight: var(--font-weight-medium);
+
+  --text-b3-size: 14px;
+  --text-b3-line: 20px;
+  --text-b3-weight: var(--font-weight-regular);
+
+  --text-b4-size: 14px;
+  --text-b4-line: 20px;
+  --text-b4-weight: var(--font-weight-medium);
+
+  // Captions
+  --text-c1-size: 12px;
+  --text-c1-line: 16px;
+  --text-c1-weight: var(--font-weight-regular);
+
+  --text-c2-size: 12px;
+  --text-c2-line: 16px;
+  --text-c2-weight: var(--font-weight-medium);
+
+  --text-c3-size: 10px;
+  --text-c3-line: 14px;
+  --text-c3-weight: var(--font-weight-medium);
+
+  // Label
+  --text-label-size: 12px;
+  --text-label-line: 16px;
+  --text-label-weight: var(--font-weight-medium);
+
+  // --- Button Font ---
+  --btn-giant-size: 18px;
+  --btn-giant-line: 24px;
+  --btn-giant-weight: var(--font-weight-semibold);
+
+  --btn-large-size: 16px;
+  --btn-large-line: 20px;
+  --btn-large-weight: var(--font-weight-semibold);
+
+  --btn-medium-size: 14px;
+  --btn-medium-line: 16px;
+  --btn-medium-weight: var(--font-weight-semibold);
+
+  --btn-small-size: 12px;
+  --btn-small-line: 16px;
+  --btn-small-weight: var(--font-weight-semibold);
+
+  --btn-tiny-size: 10px;
+  --btn-tiny-line: 12px;
+  --btn-tiny-weight: var(--font-weight-semibold);
+}
+
+// SCSS map for programmatic access
+$text-scales: (
+  'h1':    (size: 48px, line: 58px, weight: 600),
+  'h2':    (size: 40px, line: 48px, weight: 600),
+  'h3':    (size: 32px, line: 38px, weight: 600),
+  'h4':    (size: 28px, line: 34px, weight: 600),
+  'h5':    (size: 24px, line: 28px, weight: 600),
+  's1':    (size: 18px, line: 28px, weight: 600),
+  's2':    (size: 16px, line: 24px, weight: 600),
+  'b1':    (size: 16px, line: 24px, weight: 400),
+  'b2':    (size: 16px, line: 24px, weight: 500),
+  'b3':    (size: 14px, line: 20px, weight: 400),
+  'b4':    (size: 14px, line: 20px, weight: 500),
+  'c1':    (size: 12px, line: 16px, weight: 400),
+  'c2':    (size: 12px, line: 16px, weight: 500),
+  'c3':    (size: 10px, line: 14px, weight: 500),
+  'label': (size: 12px, line: 16px, weight: 500),
+);
+
+$button-scales: (
+  'giant':  (size: 18px, line: 24px, weight: 600),
+  'large':  (size: 16px, line: 20px, weight: 600),
+  'medium': (size: 14px, line: 16px, weight: 600),
+  'small':  (size: 12px, line: 16px, weight: 600),
+  'tiny':   (size: 10px, line: 12px, weight: 600),
+);

@@ -1,0 +1,27 @@
+@use '../tokens/typography' as t;
+
+@mixin text-style($scale) {
+  $map: map-get(t.$text-scales, $scale);
+
+  @if $map == null {
+    @warn "Unknown text scale: #{$scale}";
+  } @else {
+    font-size: map-get($map, size);
+    line-height: map-get($map, line);
+    font-weight: map-get($map, weight);
+    letter-spacing: 0;
+  }
+}
+
+@mixin btn-style($scale) {
+  $map: map-get(t.$button-scales, $scale);
+
+  @if $map == null {
+    @warn "Unknown button scale: #{$scale}";
+  } @else {
+    font-size: map-get($map, size);
+    line-height: map-get($map, line);
+    font-weight: map-get($map, weight);
+    letter-spacing: 0;
+  }
+}
